@@ -11,6 +11,7 @@ Revise.track(Stage1, "src/jot/utils.jl")
 using .Stage1
 
 f = CSV.File(open("data/example.csv"), header=false).Column1
+f = f[1:256]
 params = Dict("γ1" => 0.05, "γ2" => 1000.0, "γ3" => 0.05, "β" => 12.5, "a" => 50.0, "κ" => 1e-7)
 
 # Time profiling

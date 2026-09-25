@@ -1,8 +1,6 @@
 # JOT-Bridge
-This projects consists of a Julia implementation of JOT [[1]](#1), and algorithm to decompose a signal into jump, trend and oscillation, to the identification of sudden changes in the input forces of a system with the measurements in the system response.
-We have two goals with this project.
-First, since a big part of JOT is iteratively solving linear equations, we want to provide a fast implementation of JOT that leverages the structure of the systems to produce fast solutions.
-Second, be able to accurately identify "jumps" on the input force `f` of a system `AₙDⁿ(u) + ... + A₁D(u) + A₀u=f` (`D` denotes spatial derivative) only with knowledge of measurements at certain points of `y`.
+This projects consists of a Julia implementation of JOT [[1]](#1).
+Since a big part of JOT is iteratively solving linear equations, we want to provide a fast implementation of JOT that leverages the structure of the systems to produce fast solutions.
 ## Usage
 ```julia
 using CSV
